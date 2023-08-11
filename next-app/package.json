@@ -1,0 +1,29 @@
+{
+  "name": "level-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma migrate deploy && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "prisma": {
+    "schema": "src/backend/prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.1.1",
+    "@types/node": "20.2.1",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "axios": "^1.4.0",
+    "next": "13.4.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-query": "^3.39.3",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "prisma": "^5.1.1"
+  }
+}

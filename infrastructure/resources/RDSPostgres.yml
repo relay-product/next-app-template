@@ -1,0 +1,9 @@
+Type: AWS::RDS::DBInstance
+Properties:
+  AllocatedStorage: 5
+  DBInstanceClass: db.t3.micro
+  DBInstanceIdentifier: ${opt:stage}-postgres
+  DBName: ${opt:stage}
+  Engine: postgres
+  MasterUsername: postgres
+  MasterUserPassword: ${env:POSTGRES_PW}

@@ -1,0 +1,5 @@
+# Type: AWS::Route53::HostedZone
+# Properties:
+#   Name: blocktrainapp.com
+#   HostedZoneConfig:
+#     Comment: Hosted zone from blocktrainapp.com
